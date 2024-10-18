@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "TextSummarizer"
+version = "0.0.1"
+description = "A simple text summarizer"
+readme = "README.md"
+requires-python = ">=3.8"  # Adjust according to your Python version requirements
+
+# Specify authors
+authors = [
+    { name = "Varun Pandya", email = "varunpandya12a@gmail.com" }
+]
+
+# Project URL
+urls = { "Homepage" = "https://github.com/Pandyavarun/Text-Summarizer" }
+
+# Dependencies
+dependencies = [
+    "transformers",
+    "transformers[sentencepiece]",
+    "datasets",
+    "sacrebleu",
+    "rouge-score",
+    "py7zr",
+    "pandas",
+    "nltk",
+    "tqdm",
+    "PyYAML",
+    "matplotlib",
+    "torch",
+    "notebook",
+    "boto3",
+    "mypy-boto3-s3",
+    "python-box",
+    "ensure",
+    "fastapi",
+    "uvicorn",
+    "Jinja2"
+]
+
+[project.optional-dependencies]
+dev = [
+    "mypy",
+    "pytest",  # Add any development dependencies you need
+    # Other dev dependencies can be added here
+]
